@@ -5,30 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey’s</title>
+    <!-- css style -->
+    <link rel="stylesheet" href="styles/style.css">
     <!-- DaisyUI an tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- custom css -->
-    <style>
-        *{
-            background-color: #fff;
-        }
-    </style>
+
+
 </head>
 
 <body class="px-4 border-4 border-red-500">
+    <!-- This is heading Structure -->
     <header class="container mx-auto  border-4 border-black">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum debitis iste maxime facilis neque expedita officiis cumque esse voluptates repellat!</p>
+        <!-- Navbar -->
+        <div class="navbar ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost pl-0 pr-2 lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#131318]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#424247] text-base">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a>Blog</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost pl-0 text-2xl lg:text-4xl text-[#131318] font-extrabold">Hockey<span
+                        class="text-[#FF4240]">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-[#424247] text-base">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Contact</a></li>
+                    <li><a>Blog</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button class="custom-btn text-lg lg:text-xl">Get Ticket</button>
+            </div>
+        </div>
+
+        <!-- banner structure Using carousel -->
+
+        <section class="mt-12 border-2 border-red-700 relative">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex gap-4 justify-center md:justify-normal lg:justify-normal  transform 
+                        -translate-y-1/2 left-5 right-5 top-3/4 lg:top-[90%]">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/2.png" class="w-full" />
+                    <div class="absolute flex justify-center md:justify-normal lg:justify-normal gap-4 transform 
+                        -translate-y-1/2 left-5 right-5 top-3/4 lg:top-[90%]">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./Images/3.png" class="w-full" />
+                    <div class="absolute flex justify-center md:justify-normal lg:justify-normal gap-4 transform 
+                        -translate-y-1/2 left-5 right-5 top-3/4  lg:top-[90%]">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-black p-8 right-0 bottom-0  mb-8 mr-8 w-[42.91%] rounded-2xl absolute">
+                <h4 class="font-extrabold text-white text-2xl">Meet all the heroes from the field</h4>
+                <p class="">Explore the profiles of hockey's finest athletes and legends as we introduce you to all the heroes
+                    who have left their
+                    mark on the field.</p>
+            </div>
+        </section>
+
 
     </header>
     <main class="border-4 border-yellow-500">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eaque quas cumque similique, obcaecati asperiores corrupti iusto exercitationem totam distinctio officia quam magnam ea maxime cupiditate animi temporibus minima illo ad repellendus repellat molestias fuga sit. Ratione eveniet eaque molestias sequi. Cumque nemo possimus officiis ipsam quaerat quo quod, sit voluptatum consequuntur reprehenderit maxime neque est labore? Reprehenderit nostrum fugiat id architecto doloremque eos minima quae saepe quod sit! Error accusamus aperiam doloribus tempore adipisci explicabo voluptatibus voluptatum. Esse voluptas eius sequi perferendis vel, odio nobis voluptatem nostrum soluta repellat adipisci dolorem fugit vitae, magni, autem explicabo quisquam quae? Tempora.</p>
-       
+
+
 
     </main>
     <footer class="border-4 border-sky-600">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam pariatur ducimus esse architecto quas exercitationem veniam, atque nam excepturi ipsa veritatis debitis sunt. Consequuntur eius maxime quaerat cupiditate reprehenderit molestias voluptatum ducimus obcaecati rem, deleniti ratione, molestiae eveniet esse quos quo! Repellendus cum soluta fugit modi, adipisci optio veritatis! Ut?
-        </p>
+
 
     </footer>
 
