@@ -10,15 +10,16 @@
     <!-- DaisyUI an tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
-
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/0c05f102e0.js" crossorigin="anonymous"></script>
 </head>
 
+<!-- body -->
 <body class="px-4 border-4 border-red-500">
     <!-- This is heading Structure -->
-    <header class="container mx-auto  border-4 border-black">
+    <header class="container mx-auto">
         <!-- Navbar -->
-        <div class="navbar ">
+        <div class="navbar">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost pl-0 pr-2 lg:hidden">
@@ -28,8 +29,8 @@
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#424247] text-base">
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box 
+                        w-52 text-[#424247] text-base">
                         <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
@@ -37,7 +38,7 @@
                         <li><a>Blog</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost pl-0 text-2xl lg:text-4xl text-[#131318] font-extrabold">Hockey<span
+                <a class="btn btn-ghost pl-0 text-2xl lg:text-4xl text-[#131318] font-extrabold ">Hockey<span
                         class="text-[#FF4240]">’</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
@@ -50,13 +51,13 @@
                 </ul>
             </div>
             <div class="navbar-end">
+                <i class="fas fa-search text-xl w-6 mr-4 hidden md:block"></i>
                 <button class="custom-btn text-lg lg:text-xl">Get Ticket</button>
             </div>
         </div>
 
         <!-- banner structure Using carousel -->
-
-        <section class="mt-12 border-2 border-red-700 md:relative lg:relative">
+        <section class="mt-12 md:relative lg:relative">
             <div class="carousel w-full mb-4 md:mb-0 lg:mb-0">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="./Images/1.png" class="w-full" />
@@ -93,10 +94,100 @@
                     mark on the field.</p>
             </div>
         </section>
-
-
     </header>
+
+    <!-- main -->
     <main class="border-4 border-yellow-500">
+        <!-- Professional Hockeys Club -->
+        <section class="container mx-auto mt-10 md:mt-24 mb-10 md:mb-24
+        border-4 border-black">
+            <div class="text-center mx-auto 
+            w-full md:w-[70%]">
+                <h2 class=" text-[#131318] 
+                font-extrabold text-xl
+                md:text-4xl mb-1
+                ">Professional Hockeys Club</h2>
+                <p class=" text-[#13131899] 
+                font-medium text-sm md:text-base 
+                mb-6 md:mb-8
+                ">Elevate your game with the ultimate
+                    hub for Professional Hockey Clubs,
+                    offering comprehensive
+                    coverage, player insights,
+                    and match highlights.</p>
+            </div>
+            <div class="px-8 md:px-4 mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                <div class="text-center">
+                    <div class="radial-progress 
+                    font-extrabold text-xl
+                    text-[#FF4240]
+                    " style="--value:87;" role="progressbar"><span class="
+                      text-[#131318]
+                      ">
+                            87%</span>
+                    </div>
+                    <h6 class="mt-4 mb-2 font-semibold
+                      text-xl text-[#131318]
+                      ">Prayer Facility</h6>
+                    <p class="text-base 
+                      text-[#13131899]
+                      ">Enhance player focus and team
+                        unity with a dedicated prayer
+                        facility.</p>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress 
+                    font-extrabold text-xl
+                    text-[#49D293]
+                    " style="--value:90;" role="progressbar"><span class="
+                      text-[#131318]
+                      ">
+                            90%</span>
+                    </div>
+                    <h6 class="mt-4 mb-2 font-semibold
+                      text-xl text-[#131318]
+                      ">Experienced Coach</h6>
+                    <p class="text-base 
+                      text-[#13131899]
+                      ">Benefit from the guidance of seasoned coaches with a wealth of knowledge and expertise</p>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress 
+                    font-extrabold text-xl
+                    text-[#FFB546]
+                    " style="--value:95;" role="progressbar"><span class="
+                      text-[#131318]
+                      ">
+                            95%</span>
+                    </div>
+                    <h6 class="mt-4 mb-2 font-semibold
+                      text-xl text-[#131318]
+                      ">Senior Player</h6>
+                    <p class="text-base 
+                      text-[#13131899]
+                      ">Harness the leadership and experience of senior players</p>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress 
+                    font-extrabold text-xl
+                    text-[#4C8DF1]
+                    " style="--value:80;" role="progressbar"><span class="
+                      text-[#131318]
+                      ">
+                            80%</span>
+                    </div>
+                    <h6 class="mt-4 mb-2 font-semibold
+                      text-xl text-[#131318]
+                      ">Training Ground</h6>
+                    <p class="text-base 
+                      text-[#13131899]
+                      ">Providing the ideal environment for honing skills and fostering teamwork among players.</p>
+                </div>
+
+            </div>
+
+        </section>
+
 
 
 
