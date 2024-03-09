@@ -16,7 +16,7 @@
 
 <!-- body -->
 
-<body class="px-4 border-4 border-red-500">
+<body class="px-4">
     <!-- This is heading Structure -->
     <header class="container mx-auto">
         <!-- Navbar -->
@@ -51,10 +51,24 @@
                     <li><a>Blog</a></li>
                 </ul>
             </div>
-            <div class="navbar-end">
+            <!-- <div class="navbar-end">
                 <i class="fas fa-search text-xl w-6 mr-4 hidden md:block cursor-pointer"></i>
                 <button class="custom-btn text-lg lg:text-xl">Get Ticket</button>
+            </div> -->
+            <div class="navbar-end">
+                <input type="checkbox" id="search-toggle" class="hidden">
+                <label for="search-toggle">
+                    <i class="fas fa-search text-xl w-6 mr-4 cursor-pointer" id="search-icon"></i>
+                </label>
+                <input type="text" id="search-input"
+                    class="search-input px-3 py-2 rounded-lg border border-gray-300 bg-white mr-3" placeholder="Search">
+                <button class="custom-btn text-lg lg:text-xl">Get Ticket</button>
             </div>
+
+
+
+
+
         </div>
 
         <!-- banner structure Using carousel -->
@@ -98,14 +112,14 @@
     </header>
 
     <!-- main -->
-    <main class="border-4 border-yellow-500">
+    <main class="">
         <!-- Professional Hockeys Club -->
         <section class="container mx-auto mt-10 md:mt-24 mb-10 md:mb-24">
             <div class="text-center mx-auto 
             w-full md:w-[70%]">
                 <h2 class=" text-[#131318] 
                 font-extrabold text-xl
-                md:text-4xl mb-1
+                md:text-4xl mb-6
                 ">Professional Hockeys Club</h2>
                 <p class=" text-[#13131899] 
                 font-medium text-sm md:text-base 
@@ -193,7 +207,7 @@
                         w-full md:w-[70%]">
                 <h2 class=" text-[#131318] 
                             font-extrabold text-xl
-                            md:text-4xl mb-1
+                            md:text-4xl mb-6
                             ">Program Sections</h2>
                 <p class=" text-[#13131899] 
                             font-medium text-sm md:text-base 
@@ -224,7 +238,7 @@
                 <div class="p-6 md:p-10 relative rounded-2xl">
                     <!-- Background image -->
                     <div class="absolute inset-0 bg-center bg-no-repeat bg-cover rounded-2xl"
-                        style="background-image: url('/Images/3.png');"></div>
+                        style="background-image: url('./Images/3.png');"></div>
                     <!-- Overlay with opacity -->
                     <div class="absolute inset-0 bg-black bg-opacity-50 rounded-2xl"></div>
                     <!-- Content -->
@@ -239,7 +253,7 @@
                 <div class="md:col-span-2 p-6 md:p-10 relative rounded-2xl">
                     <!-- Background image -->
                     <div class="absolute inset-0 bg-center bg-no-repeat bg-cover rounded-2xl"
-                        style="background-image: url('/Images/4.png');"></div>
+                        style="background-image: url('./Images/4.png');"></div>
                     <!-- Overlay with opacity -->
                     <div class="absolute inset-0 bg-black bg-opacity-50 rounded-2xl"></div>
                     <!-- Content -->
@@ -265,7 +279,7 @@
                                     w-full md:w-[70%] mb-6 md:mb-12">
                 <h2 class=" text-[#131318] 
                                         font-extrabold text-xl
-                                        md:text-4xl mb-1
+                                        md:text-4xl mb-6
                                         ">Our New Products</h2>
                 <p class=" text-[#13131899] 
                                         font-medium text-sm md:text-base 
@@ -756,11 +770,11 @@
                                 class="p-5 rounded-xl bg-[#13131807] outline-none w-full "></textarea>
                         </div>
                         <div class="md:col-span-2 h-full">
-                            <button class="custom-btn w-full h-full">Send Message</button>
+                            <button class="custom-btn w-full h-full py-6 lg:py-4 font-semibold text-xl">Send
+                                Message</button>
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <!-- social media -->
@@ -772,12 +786,10 @@
                 <i class="fa-brands fa-github text-2xl text-[#131318] cursor-pointer"></i>
             </div>
         </section>
-
-
     </main>
+
     <!-- footer -->
     <footer class="bg-[#131318] py-10 md:py-24 lg:py-28 ">
-        
         <section class="container mx-auto">
             <!-- footer container -->
             <div class="flex flex-col md:flex-row  gap-10  lg:gap-40 w-full">
@@ -800,7 +812,8 @@
                     </p>
                 </div>
                 <!-- footer mid -->
-                <div class="flex flex-1 justify-around md:justify-between px-4 md:px-0 text-center md:text-start">
+                <div class="flex flex-1 justify-around md:justify-between xl:justify-around px-4 md:px-0 text-center 
+                    md:text-start">
                     <div class="">
                         <h4 class="font-bold text-lg text-white mb-6 lg:mb-7">Company</h4>
                         <ul class="font-medium text-[#FFFFFF99] flex flex-col space-y-4">
@@ -834,7 +847,6 @@
                 </div>
             </div>
         </section>
-
     </footer>
 
 </body>
