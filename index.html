@@ -31,7 +31,7 @@
                         </svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box 
-                        w-52 text-[#424247] text-base">
+                        w-52 text-white text-base">
                         <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
@@ -52,14 +52,14 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <i class="fas fa-search text-xl w-6 mr-4 hidden md:block"></i>
+                <i class="fas fa-search text-xl w-6 mr-4 hidden md:block cursor-pointer"></i>
                 <button class="custom-btn text-lg lg:text-xl">Get Ticket</button>
             </div>
         </div>
 
         <!-- banner structure Using carousel -->
         <section class="mt-12 md:relative lg:relative">
-            <div class="carousel w-full mb-4 md:mb-0 lg:mb-0">
+            <div class="carousel mb-4 md:mb-0 lg:mb-0 w-full h-auto md:h-[550px]">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="./Images/1.png" class="w-full" />
                     <div class="absolute flex gap-4 justify-center md:justify-normal lg:justify-normal  transform 
@@ -185,7 +185,6 @@
                 </div>
 
             </div>
-
         </section>
 
         <!-- program section -->
@@ -207,8 +206,8 @@
             <div class="mt-6 md:mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="p-6 md:p-10 relative rounded-2xl ">
                     <!-- Background image -->
-                    <div class="absolute inset-0 bg-center bg-no-repeat bg-cover rounded-2xl h-[338px]"
-                        style="background-image: url('/Images/2.png');"></div>
+                    <div class="absolute inset-0 bg-center bg-no-repeat bg-cover rounded-2xl"
+                        style="background-image: url('./Images/2.png');"></div>
                     <!-- Overlay with opacity -->
                     <div class="absolute inset-0 bg-black bg-opacity-50 rounded-2xl"></div>
                     <!-- Content -->
@@ -246,7 +245,8 @@
                     <!-- Content -->
                     <div class="relative z-10">
                         <h5 class="text-xl md:text-3xl text-white font-extrabold md:mt-52">Professional Program</h5>
-                        <p class="mb-5 md:mb-6 mt-1 md:mt-2 text-sm md:text-base text-white w-full md:w-[44.44%]">Tailored
+                        <p class="mb-5 md:mb-6 mt-1 md:mt-2 text-sm md:text-base text-white w-full md:w-[44.44%]">
+                            Tailored
                             for experienced
                             players aiming to enhance their skills and compete at elite levels, our Professional Program
                             offers advanced training, personalized coaching, and strategic development to help hockey
@@ -256,12 +256,350 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
+        <!-- New product -->
+        <section class="container mx-auto mb-10 md:mb-24 border-4 border-black">
+            <!-- product heading text -->
+            <div class="text-center mx-auto 
+                                    w-full md:w-[70%] mb-6 md:mb-12">
+                <h2 class=" text-[#131318] 
+                                        font-extrabold text-xl
+                                        md:text-4xl mb-1
+                                        ">Our New Products</h2>
+                <p class=" text-[#13131899] 
+                                        font-medium text-sm md:text-base 
+                                        mb-6 md:mb-8
+                                        ">Discover the latest lineup of hockey gear and equipment, curated for
+                    performance and style, to elevate your game on and
+                    off the ice. Explore cutting-edge technology and innovative designs tailored for every player's
+                    needs.</p>
+            </div>
+            <!-- products cart -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+                <!-- individual cart -->
+                <div class="rounded-2xl border border-[#13131819] p-6 flex flex-col md:flex-row gap-6">
+                    <img src="./Images/5.png" alt="">
+                    <!-- card content -->
+                    <div>
+                        <p class="text-[#0d0d1233]  
+                         font-medium">
+                        <span class="text-orange-500">
+                            <i class="fa fa-star w-6 
+                            h-6"> 
+                            </i>
+                        </span>5.0 
+                        <span class="ml-4 mr-4">
+                            <i class="fa-regular 
+                            fa-eye w-6 
+                            h-6"></i>
+                            20
+                        </span>
+                        <span>
+                            <i class="fa-regular 
+                            fa-heart w-6 
+                            h-6"></i>
+                            200
+                        </span>
+                        </p>
+                        <h6 class="text-[#131318]
+                        font-extrabold text-xl mb-3
+                        ">World Cup Flags 
+                            Football</h6>
+                        <p class="text-[#13131899]
+                        font-medium mb-4
+                        ">Captures the international 
+                            spirit of competitive soccer 
+                            tournaments.</p>
+                        <p>
+                            <span class=" font-extrabold
+                            text-lg text-[#FF4240] 
+                            md:mr-5 
+                            ">
+                                Price - $22.00
+                            </span>
+                            <span class="font-medium
+                             block 
+                             md:inline mt-4 md:mt-0
+                            ">
+                            <i class="fa-solid 
+                            fa-cart-shopping mr-1
+                            h-6 w-6
+                            "></i>
+                                Delivery Fee : Free
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-[#13131819] p-6 flex flex-col md:flex-row gap-6">
+                    <img src="./Images/6.png" alt="">
+                    <!-- card content -->
+                    <div>
+                        <p class="text-[#0d0d1233]  
+                         font-medium">
+                        <span class="text-orange-500">
+                            <i class="fa fa-star w-6 
+                            h-6"> 
+                            </i>
+                        </span>5.0 
+                        <span class="ml-4 mr-4">
+                            <i class="fa-regular 
+                            fa-eye w-6 
+                            h-6"></i>
+                            20
+                        </span>
+                        <span>
+                            <i class="fa-regular 
+                            fa-heart w-6 
+                            h-6"></i>
+                            200
+                        </span>
+                        </p>
+                        <h6 class="text-[#131318]
+                        font-extrabold text-xl mb-3
+                        ">World Cup Flags 
+                            Football</h6>
+                        <p class="text-[#13131899]
+                        font-medium mb-4
+                        ">Captures the international 
+                            spirit of competitive soccer 
+                            tournaments.</p>
+                        <p>
+                            <span class=" font-extrabold
+                            text-lg text-[#FF4240] 
+                            md:mr-5 
+                            ">
+                                Price - $22.00
+                            </span>
+                            <span class="font-medium
+                             block 
+                             md:inline mt-4 md:mt-0
+                            ">
+                            <i class="fa-solid 
+                            fa-cart-shopping mr-1
+                            h-6 w-6
+                            "></i>
+                                Delivery Fee : Free
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-[#13131819] p-6 flex flex-col md:flex-row gap-6">
+                    <img src="./Images/7.png" alt="">
+                    <!-- card content -->
+                    <div>
+                        <p class="text-[#0d0d1233]  
+                         font-medium">
+                        <span class="text-orange-500">
+                            <i class="fa fa-star w-6 
+                            h-6"> 
+                            </i>
+                        </span>5.0 
+                        <span class="ml-4 mr-4">
+                            <i class="fa-regular 
+                            fa-eye w-6 
+                            h-6"></i>
+                            20
+                        </span>
+                        <span>
+                            <i class="fa-regular 
+                            fa-heart w-6 
+                            h-6"></i>
+                            200
+                        </span>
+                        </p>
+                        <h6 class="text-[#131318]
+                        font-extrabold text-xl mb-3
+                        ">World Cup Flags 
+                            Football</h6>
+                        <p class="text-[#13131899]
+                        font-medium mb-4
+                        ">Captures the international 
+                            spirit of competitive soccer 
+                            tournaments.</p>
+                        <p>
+                            <span class=" font-extrabold
+                            text-lg text-[#FF4240] 
+                            md:mr-5 
+                            ">
+                                Price - $22.00
+                            </span>
+                            <span class="font-medium
+                             block 
+                             md:inline mt-4 md:mt-0
+                            ">
+                            <i class="fa-solid 
+                            fa-cart-shopping mr-1
+                            h-6 w-6
+                            "></i>
+                                Delivery Fee : Free
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-[#13131819] p-6 flex flex-col md:flex-row gap-6">
+                    <img src="./Images/8.png" alt="">
+                    <!-- card content -->
+                    <div>
+                        <p class="text-[#0d0d1233]  
+                         font-medium">
+                        <span class="text-orange-500">
+                            <i class="fa fa-star w-6 
+                            h-6"> 
+                            </i>
+                        </span>5.0 
+                        <span class="ml-4 mr-4">
+                            <i class="fa-regular 
+                            fa-eye w-6 
+                            h-6"></i>
+                            20
+                        </span>
+                        <span>
+                            <i class="fa-regular 
+                            fa-heart w-6 
+                            h-6"></i>
+                            200
+                        </span>
+                        </p>
+                        <h6 class="text-[#131318]
+                        font-extrabold text-xl mb-3
+                        ">World Cup Flags 
+                            Football</h6>
+                        <p class="text-[#13131899]
+                        font-medium mb-4
+                        ">Captures the international 
+                            spirit of competitive soccer 
+                            tournaments.</p>
+                        <p>
+                            <span class=" font-extrabold
+                            text-lg text-[#FF4240] 
+                            md:mr-5 
+                            ">
+                                Price - $22.00
+                            </span>
+                            <span class="font-medium
+                             block 
+                             md:inline mt-4 md:mt-0
+                            ">
+                            <i class="fa-solid 
+                            fa-cart-shopping mr-1
+                            h-6 w-6
+                            "></i>
+                                Delivery Fee : Free
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-[#13131819] p-6 flex flex-col md:flex-row gap-6">
+                    <img src="./Images/9.png" alt="">
+                    <!-- card content -->
+                    <div>
+                        <p class="text-[#0d0d1233]  
+                         font-medium">
+                        <span class="text-orange-500">
+                            <i class="fa fa-star w-6 
+                            h-6"> 
+                            </i>
+                        </span>5.0 
+                        <span class="ml-4 mr-4">
+                            <i class="fa-regular 
+                            fa-eye w-6 
+                            h-6"></i>
+                            20
+                        </span>
+                        <span>
+                            <i class="fa-regular 
+                            fa-heart w-6 
+                            h-6"></i>
+                            200
+                        </span>
+                        </p>
+                        <h6 class="text-[#131318]
+                        font-extrabold text-xl mb-3
+                        ">World Cup Flags 
+                            Football</h6>
+                        <p class="text-[#13131899]
+                        font-medium mb-4
+                        ">Captures the international 
+                            spirit of competitive soccer 
+                            tournaments.</p>
+                        <p>
+                            <span class=" font-extrabold
+                            text-lg text-[#FF4240] 
+                            md:mr-5 
+                            ">
+                                Price - $22.00
+                            </span>
+                            <span class="font-medium
+                             block 
+                             md:inline mt-4 md:mt-0
+                            ">
+                            <i class="fa-solid 
+                            fa-cart-shopping mr-1
+                            h-6 w-6
+                            "></i>
+                                Delivery Fee : Free
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-[#13131819] p-6 flex flex-col md:flex-row gap-6">
+                    <img src="./Images/10.png" alt="">
+                    <!-- card content -->
+                    <div>
+                        <p class="text-[#0d0d1233]  
+                         font-medium">
+                        <span class="text-orange-500">
+                            <i class="fa fa-star w-6 
+                            h-6"> 
+                            </i>
+                        </span>5.0 
+                        <span class="ml-4 mr-4">
+                            <i class="fa-regular 
+                            fa-eye w-6 
+                            h-6"></i>
+                            20
+                        </span>
+                        <span>
+                            <i class="fa-regular 
+                            fa-heart w-6 
+                            h-6"></i>
+                            200
+                        </span>
+                        </p>
+                        <h6 class="text-[#131318]
+                        font-extrabold text-xl mb-3
+                        ">World Cup Flags 
+                            Football</h6>
+                        <p class="text-[#13131899]
+                        font-medium mb-4
+                        ">Captures the international 
+                            spirit of competitive soccer 
+                            tournaments.</p>
+                        <p>
+                            <span class=" font-extrabold
+                            text-lg text-[#FF4240] 
+                            md:mr-5 
+                            ">
+                                Price - $22.00
+                            </span>
+                            <span class="font-medium
+                             block 
+                             md:inline mt-4 md:mt-0
+                            ">
+                            <i class="fa-solid 
+                            fa-cart-shopping mr-1
+                            h-6 w-6
+                            "></i>
+                                Delivery Fee : Free
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-
+        
     </main>
     <footer class="border-4 border-sky-600">
 
