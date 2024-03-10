@@ -14,8 +14,6 @@
     background-color: brown;
 }
 
-
-
 body {
     background-color: white;
     font-family: "Manrope", sans-serif;
@@ -24,10 +22,6 @@ body {
     font-style: normal;
 }
 
-/* CSS for hiding the search icon when the input field is focused */
-/* Initially hide the input field */
-/* Show search input on click */
-/* Hide input field by default */
 label #search-icon {
     display: none;
 }
@@ -36,18 +30,18 @@ label #search-icon {
     display: none;
 }
 
-@media screen and (min-width:768px) and (max-width:1440px) {
+@media only screen and (min-width: 768px) {
     label #search-icon {
         display: block;
     }
 
     /* When checkbox is checked, show input field and hide search icon */
-    #search-toggle:checked~#search-input {
-        display: inline-block;
+    #search-toggle:checked~label #search-input {
+        display: block;
     }
 
-    #search-toggle:checked+label {
-        display: none;
+    #search-toggle:checked+label #search-icon {
+        margin-top: 20px;
     }
 
 }

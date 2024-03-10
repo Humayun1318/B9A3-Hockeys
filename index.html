@@ -51,24 +51,17 @@
                     <li><a>Blog</a></li>
                 </ul>
             </div>
-            <!-- <div class="navbar-end">
-                <i class="fas fa-search text-xl w-6 mr-4 hidden md:block cursor-pointer"></i>
-                <button class="custom-btn text-lg lg:text-xl">Get Ticket</button>
-            </div> -->
             <div class="navbar-end">
                 <input type="checkbox" id="search-toggle" class="hidden">
-                <label for="search-toggle">
-                    <i class="fas fa-search text-xl w-6 mr-4 cursor-pointer" id="search-icon"></i>
+                <label for="search-toggle" class="relative">
+                    <input type="text" id="search-input"
+                        class="search-input px-3 py-2 rounded-lg outline-none bg-slate-100 mr-3 text-black"
+                        placeholder="Search">
+                    <i class="fas fa-search text-xl w-6 mr-4 cursor-pointer absolute right-0 -top-3"
+                        id="search-icon"></i>
                 </label>
-                <input type="text" id="search-input"
-                    class="search-input px-3 py-2 rounded-lg border border-gray-300 bg-white mr-3" placeholder="Search">
                 <button class="custom-btn text-lg lg:text-xl">Get Ticket</button>
             </div>
-
-
-
-
-
         </div>
 
         <!-- banner structure Using carousel -->
